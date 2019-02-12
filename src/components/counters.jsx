@@ -19,12 +19,10 @@ class Counters extends Component {
           Add
         </button>
         {this.props.counters.map(counter => (
-          //onDelete, value, id are props being passed to the counter component
           <Counter
             key={counter.id}
             onIncrement={onIncrement}
             onDelete={onDelete}
-            /*value={counter.value} id={counter.id} both part of counter object and can be passed together to simplify code, see below*/
             counter={counter}
           />
         ))}
@@ -34,26 +32,3 @@ class Counters extends Component {
 }
 
 export default Counters;
-
-/* same as class extends: function Counters(props) {
-  return (
-    <div>
-      <button
-        onClick={this.props.onReset}
-        className="btn btn-primary btn-sm m-2"
-      >
-        Reset
-      </button>
-      {this.props.counters.map(counter => (
-        //onDelete, value, id are props being passed to the counter component
-        <Counter
-          key={counter.id}
-          onIncrement={this.props.onIncrememt}
-          onDelete={this.props.onDelete}
-          //value={counter.value} id={counter.id} both part of counter object and can be passed together to simplify code, see below
-          counter={counter}
-        />
-      ))}
-    </div>
-  );
-}*/

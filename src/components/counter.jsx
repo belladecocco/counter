@@ -36,36 +36,3 @@ class Counter extends Component {
 }
 
 export default Counter;
-
-/*  renderTags() {
-   if (this.state.tags.length === 0) return <p>There are no tags</p>;
-
-  return (
-    <ul>
-      {this.state.tags.map(tag => (
-        <li key={tag}>{tag}</li>
-      ))}
-    </ul>
-  );
-} */
-
-/*{this.state.tags.length === 0 && "Please create a new tag"}
-        {this.renderTags()} */
-
-/*state obj includes any data that the component needs. This state is commented
-out to remove the local state of this component
-so it doesn't conflict with the parent's state*/
-/*state = {
-  value: this.props.counter.value
-};
-constructor(props) {
-  super(props);
-
-  this.handleIncrement = this.handleIncrement.bind(this);
-}
-
-/*handleIncrement() {
-  this.setState({ value: this.state.value + 1 });
-}
-onClick would look like {this.handleIncrement}
-*/

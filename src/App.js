@@ -30,7 +30,7 @@ class App extends Component {
   handleDelete(counterId) {
     console.log("Event Handler Called", counterId);
     const counters = this.state.counters.filter(c => c.id !== counterId);
-    this.setState({ counters }); //same as this.setState({counters: counters})
+    this.setState({ counters });
   }
   handleReset() {
     const counters = this.state.counters.map(c => {
